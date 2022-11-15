@@ -30,3 +30,23 @@
 .min-max {
   color: #757575;
 }
+.daily-details-grid {
+  display: grid;
+  flex: 1 1;
+  row-gap: 0;
+  column-gap: 15px;
+  grid-template-columns: auto auto;
+  padding: 5px 15px;
+}
+.daily-details-gid-item {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.daily-details-gid-item label:first-child {
+  color: #757575;
+}
+.daily-details-gid-item label:last-child {
+  color: #212121;
+}

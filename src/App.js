@@ -28,7 +28,7 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
-  console.log(currentWeather);
+  
   return (
     <div className="Container">
       <Search onSearchChange={handleOnSearchChange} />
