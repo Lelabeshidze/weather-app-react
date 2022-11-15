@@ -1,24 +1,28 @@
 import React from "react";
 import "./CurrentWeather.css";
-const CurrentWeather = () => {
+const CurrentWeather = ({ data }) => {
   return (
     <div className="Weather">
       <div className="Top">
         <div>
-          <p className="City">Belgrade</p>
-          <p className="weather-description">Sunny</p>
+          <p className="City">{data.city}</p>
+          <p className="weather-description">{data.weather[0].description}</p>
         </div>
-        <img alt="weather" className="weather-icon " src="icons/01d.png" />
+        <img
+          alt="weather"
+          className="weather-icon "
+          src={`icons/${data.weather[0].icon}.png`}
+        />
       </div>
       <div className="Buttom">
-        <p className="Temperature">18°C</p>
+        <p className="Temperature">18°F</p>
         <div className="Details">
           <div className="parameter-row">
             <span className="parameter-label">Details</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Feels Like</span>
-            <span className="parameter-value">22°C</span>
+            <span className="parameter-value">22°F</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Wind</span>
