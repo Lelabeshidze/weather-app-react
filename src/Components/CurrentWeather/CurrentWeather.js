@@ -14,7 +14,7 @@ const CurrentWeather = ({ data }) => {
           src={`icons/${data.weather[0].icon}.png`}
         />
       </div>
-      <div className="Buttom">
+      <div className="Bottom">
         <p className="Temperature">{Math.round(data.main.temp)}°C</p>
         <div className="Details">
           <div className="parameter-row">

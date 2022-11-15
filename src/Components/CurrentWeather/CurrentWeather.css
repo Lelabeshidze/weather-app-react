@@ -8,7 +8,7 @@
   padding: 0 20px 20px 20px;
 }
 .Top,
-.Buttom {
+.Bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
